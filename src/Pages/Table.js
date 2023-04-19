@@ -1,11 +1,9 @@
 import React from 'react';
 import { Grid, GridItem } from '@chakra-ui/react';
-import Navbar from './Components/NavBar/Navbar';
-import Dashboard from './Pages/Dashboard';
-import Sidebar from './Components/SideBar/Sidebar';
-import './App.css';
-
-function App() {
+import Navbar from '../Components/NavBar/Navbar';
+import Dashboard from '../Pages/Dashboard';
+import Sidebar from '../Components/SideBar/Sidebar';
+function Table() {
   return (
     <Grid templateColumns="repeat(6, 1fr)" bg="#f7fafc">
       <GridItem
@@ -32,5 +30,4 @@ function App() {
     </Grid>
   );
 }
-
-export default App;
+export default Table;
