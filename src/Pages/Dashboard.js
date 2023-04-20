@@ -38,7 +38,7 @@ function Dashboard() {
   return (
     <div>
       <SimpleGrid
-        spacing={4}
+        spacing={7}
         templateColumns="repeat(auto-fill, minmax(200px, 1fr))"
       >
         {cardData.map((card, index) => (

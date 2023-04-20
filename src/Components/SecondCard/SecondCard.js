@@ -1,25 +1,26 @@
 import React from 'react';
-import { Box, Flex, Text, Button, Card } from '@chakra-ui/react';
+import { Box, Flex, Text, Button, Card, Icon } from '@chakra-ui/react';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 
 function BigCard() {
   return (
     <Flex
       as="chakraCard"
-      gap="1rem"
+      gap="4"
       flexDirection={{
         base: 'column',
-        sm: 'column',
-        lg: 'inherit',
-        xl: 'inherit',
+        md: 'inherit',
       }}
+      my="6"
     >
       <Box
         bg="white"
         borderRadius="15px"
-        p="22px"
-        mb="20px"
-        h={{ base: '600px', sm: 'full', md: 'full', lg: '300px' }}
-        width={{ base: 'full', sm: 'full', md: 'full', lg: '650px' }}
+        p="5"
+        h={{ base: '600px', md: 'full', lg: '300px' }}
+        width={{ base: 'full', md: 'full', lg: '650px' }}
+        boxShadow="rgba(0, 0, 0, 0.02) 0px 3.5px 5.5px"
+        position="relative"
       >
         <Flex
           gap="12"
@@ -28,22 +29,21 @@ function BigCard() {
           align="center"
           flexDirection={{
             base: 'column',
-            sm: 'inherit',
             md: 'inherit',
-            lg: 'inherit',
           }}
         >
           <Flex direction="column">
-            <Text fontSize="lg" fontWeight="500" mb="4" color="#a0aec0">
+            <Text fontSize="sm" fontWeight="bold" mb="4" color="gray.400">
               Built by Developers
             </Text>
-            <Text fontSize="md" mb="4" color="black" fontWeight="900">
+            <Text fontSize="lg" mb="4" color="gray.700" fontWeight="bold">
               Purity UI Dashboard
             </Text>
             <Text
               mb={{ base: '10px', lg: '20px' }}
-              color="#a0aec0"
-              fontSize="14px"
+              color="gray.400"
+              fontSize="sm"
+              fontWeight="normal"
             >
               From colors, cards, typography to complex elements, you will find
               the full documentation.
@@ -52,26 +52,25 @@ function BigCard() {
               colorScheme="#fff"
               justifyContent="flex-start"
               p="0"
-              mt="10"
+              position="absolute"
+              bottom="0px"
             >
-              <Text>Read more</Text>
-              <Box
-                as="svg"
-                height="1em"
-                width="1em"
-                ml="1"
-                viewBox="0 0 16 16"
-                focusable="false"
-                stroke="currentColor"
-                fill="currentColor"
-                strokeWidth="0"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                ></path>
-              </Box>
+              <Text color="gray.700" fontWeight="bold" fontSize="sm">
+                Read more
+              </Text>
+              <Icon
+                as={ArrowForwardIcon}
+                bg="#fff"
+                color="gray.700"
+                fontWeight="bold"
+                fontSize="sm"
+                h="5"
+                w="5"
+                transition="transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1)"
+                _hover={{
+                  transform: 'translateX(8px)',
+                }}
+              />
             </Button>
           </Flex>
           <Flex
@@ -80,7 +79,7 @@ function BigCard() {
             width="250px"
             height="250px"
             display="flex"
-            p="0px 30px"
+            px="8"
             borderRadius="15px"
           >
             <svg
@@ -106,10 +105,9 @@ function BigCard() {
         p="4"
         borderRadius="15px"
         bg="#fff"
-        h="300px"
-        mb="20px"
-        width={{ base: 'full', sm: 'full', md: 'full', lg: '400px' }}
-        boxShadow="none"
+        h={{ md: '290px', lg: '300px' }}
+        width={{ base: 'full', md: 'full', lg: '400px' }}
+        boxShadow="rgba(0, 0, 0, 0.02) 0px 3.5px 5.5px"
       >
         <Box
           bg="url('https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=600')"
@@ -121,34 +119,36 @@ function BigCard() {
           justifyContent="flex-start"
           alignItems="center"
           borderRadius="15px"
+          position="relative"
         >
           <Box maxWidth="300px" ml="8">
             <Text fontWeight="bold" mb="4" fontSize="20px" color="#fff">
               Work with the rockets
             </Text>
-            <Text mb="4" fontSize="14px" fontWeight="500" color="#fff">
+            <Text fontSize="14px" fontWeight="500" color="#fff">
               Wealth creation is a revolutionary recent positive-sum game. It is
               all about who takes the opportunity first.
             </Text>
-            <Button colorScheme="transparent" color="#fff" p="0" mt="3rem">
+            <Button
+              colorScheme="transparent"
+              color="#fff"
+              p="0"
+              mt="3rem"
+              position="absolute"
+              bottom="0"
+            >
               <Text>Read more</Text>
-              <Box
-                as="svg"
-                height="1em"
-                width="1em"
-                ml="1"
-                viewBox="0 0 16 16"
-                focusable="false"
-                stroke="currentColor"
-                fill="currentColor"
-                strokeWidth="0"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                ></path>
-              </Box>
+              <Icon
+                as={ArrowForwardIcon}
+                bg="transparent"
+                color="#fff"
+                h="5"
+                w="5"
+                transition="transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1)"
+                _hover={{
+                  transform: 'translateX(8px)',
+                }}
+              />
             </Button>
           </Box>
         </Box>

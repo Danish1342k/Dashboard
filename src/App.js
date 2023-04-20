@@ -13,7 +13,7 @@ function App() {
         colSpan={{ base: 6, lg: 1, xl: 1 }}
         bg="#f7fafc"
         minHeight={{ lg: '100vh' }}
-        p={{ lg: '30px 0 30px 30px' }}
+        p={{ lg: '30px 0 20px 20px' }}
       >
         <Sidebar />
       </GridItem>
@@ -21,9 +21,10 @@ function App() {
       <GridItem
         as="main"
         colSpan={{ base: 6, lg: 5, xl: 5 }}
-        px="12"
-        pt="6"
-        pb="10"
+        p="8"
+        // px="12"
+        // pt="6"
+        // pb="10"
         className="scrollbar"
       >
         <Navbar />

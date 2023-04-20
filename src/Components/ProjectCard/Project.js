@@ -172,20 +172,18 @@ function Project() {
       mb="30px"
       flexDirection={{
         base: 'column',
-        sm: 'column',
         md: 'inherit',
-        lg: 'inherit',
-        xl: 'inherit',
       }}
     >
       <Card
         className="tableCard"
         as="table"
         bg="#fff"
-        w={{ base: 'full', sm: 'full', md: '500px', lg: '650px' }}
-        p="20px"
+        w={{ base: 'full', md: '500px', lg: '750px' }}
+        p="16px"
         overflow="auto"
-        boxShadow="none"
+        borderRadius="15px"
+        boxShadow="rgba(0, 0, 0, 0.02) 0px 3.5px 5.5px"
       >
         <Heading color="black" fontSize="18px">
           Projects
@@ -263,10 +261,11 @@ function Project() {
         </Table>
       </Card>
       <Card
+        borderRadius="15px"
         bg="#fff"
-        w={{ base: 'full', sm: 'full', md: '500px', lg: '400px' }}
+        w={{ base: 'full', md: '500px', lg: '350px' }}
         p="20px 40px"
-        boxShadow="none"
+        boxShadow="rgba(0, 0, 0, 0.02) 0px 3.5px 5.5px"
       >
         <Heading color="black" as="h4" fontSize="18px">
           Orders Overview

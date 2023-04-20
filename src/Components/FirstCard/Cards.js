@@ -3,15 +3,25 @@ import { Flex, Text, Icon, Box } from '@chakra-ui/react';
 
 function Cards({ title, amount, percentage, icon }) {
   return (
-    <Box bg="white" borderRadius="15px" p="22px" mb="20px">
+    <Box
+      bg="white"
+      borderRadius="15px"
+      p="5"
+      boxShadow="rgba(0, 0, 0, 0.02) 0px 3.5px 5.5px"
+    >
       <Flex direction="row" justify="space-between" align="center">
         <Flex direction="column">
-          <Text fontSize="18px" color="#a0aec0" fontWeight="600">
+          <Text fontSize="sm" color="gray.400" fontWeight="bold">
             {title}
           </Text>
-          <Text fontSize="18px" fontWeight="700" color="black">
+          <Text fontSize="lg" fontWeight="semibold" color="gray.700">
             {amount}
-            <Text as="span" fontSize="18px" color="#6dc994">
+            <Text
+              as="span"
+              fontSize="md"
+              color={percentage.includes('-') ? 'red.400' : 'green.400'}
+              fontWeight="bold"
+            >
               {percentage}
             </Text>
           </Text>
@@ -19,11 +29,12 @@ function Cards({ title, amount, percentage, icon }) {
         <Flex align="center">
           <Icon
             as={icon}
-            fontSize="40px"
-            bg="#4fd1c5"
+            bg="teal.300"
             color="#fff"
-            p="10px"
-            borderRadius="6px"
+            borderRadius="12px"
+            p="13px"
+            h="45px"
+            w="45px"
           />
         </Flex>
       </Flex>

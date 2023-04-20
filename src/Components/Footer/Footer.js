@@ -5,7 +5,7 @@ function Footer() {
   return (
     <Flex w="full" color="#adb9c9" display="flex" justifyContent="center">
       <Flex
-        flexDirection={{ base: 'column', sm: 'column' }}
+        flexDirection={{ base: 'column', md: 'inherit' }}
         alignItems="center"
       >
         © 2023, Made with ❤️ by

@@ -1,4 +1,4 @@
-.tableCard::-webkit-scrollbar {
+/* .tableCard::-webkit-scrollbar {
     width: 4px;
     background: #f7fafc;
 }
@@ -6,7 +6,7 @@
 .tableCard::-webkit-scrollbar-thumb {
     background-color: #cbd5e0;
     border-radius: 0.25em;
-}
+} */
 
 .taskImg{
     border-radius: 100%;

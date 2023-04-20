@@ -38,7 +38,7 @@ export default function Sidebar() {
               borderRadius="6px"
               mx="12px"
             />
-            <Text fontSize="sm" fontWeight="700">
+            <Text color="gray.700" fontSize="sm" fontWeight="bold">
               Chakra UI Dashboard
             </Text>
           </Flex>
@@ -49,15 +49,16 @@ export default function Sidebar() {
         as="list"
         display="flex"
         alignItems="center"
-        fontSize="md"
+        fontSize="sm"
         mb="3"
         py="3.5"
         w="80%"
         h="60px"
-        boxShadow="none"
+        // boxShadow="none"
+        boxShadow="rgba(0, 0, 0, 0.02) 0px 3.5px 5.5px"
         borderRadius="15px"
         bg="#fff"
-        color="black"
+        color="gray.700"
         fontWeight="600"
       >
         <Icon
@@ -89,21 +90,22 @@ export default function Sidebar() {
         <Icon
           as={FaChartLine}
           boxSize={6}
-          color="#4fd1c5"
-          fontSize="10px"
+          color="teal.300"
           bg="#fff"
-          p="5px"
-          borderRadius="6px"
+          p="8px"
+          borderRadius="12px"
+          h="30px"
+          w="30px"
           mr="4"
         />
         Table
       </ListItem>
       <ListItem
         as="list"
-        color="#a0aec0"
+        color="gray.400"
         display="flex"
         alignItems="center"
-        fontSize="md"
+        fontSize="sm"
         mb="3"
         py="3.5"
         px="4"
@@ -112,11 +114,12 @@ export default function Sidebar() {
         <Icon
           as={FaCreditCard}
           boxSize={6}
-          color="#4fd1c5"
-          fontSize="10px"
+          color="teal.300"
           bg="#fff"
-          p="5px"
-          borderRadius="6px"
+          p="8px"
+          borderRadius="12px"
+          h="30px"
+          w="30px"
           mr="4"
         />
         Billing
@@ -135,24 +138,25 @@ export default function Sidebar() {
         <Icon
           as={FaToolbox}
           boxSize={6}
-          color="#4fd1c5"
-          fontSize="10px"
+          color="teal.300"
           bg="#fff"
-          p="5px"
-          borderRadius="6px"
+          p="8px"
+          borderRadius="12px"
+          h="30px"
+          w="30px"
           mr="4"
         />
         RTL
       </ListItem>
-      <ListItem as="list" ml="20px" fontWeight="700">
+      <ListItem as="list" ml="20px" fontWeight="bold" color="gray.700">
         Account Pages
       </ListItem>
       <ListItem
         as="list"
-        color="#a0aec0"
+        color="gray.400"
         display="flex"
         alignItems="center"
-        fontSize="md"
+        fontSize="sm"
         mb="3"
         py="3.5"
         px="4"
@@ -161,11 +165,12 @@ export default function Sidebar() {
         <Icon
           as={FaUser}
           boxSize={6}
-          color="#4fd1c5"
-          fontSize="10px"
+          color="teal.300"
           bg="#fff"
-          p="5px"
-          borderRadius="6px"
+          p="8px"
+          borderRadius="12px"
+          h="30px"
+          w="30px"
           mr="4"
         />
         Profile
@@ -184,21 +189,22 @@ export default function Sidebar() {
         <Icon
           as={FaFile}
           boxSize={6}
-          color="#4fd1c5"
-          fontSize="10px"
+          color="teal.300"
           bg="#fff"
-          p="5px"
-          borderRadius="6px"
+          p="8px"
+          borderRadius="12px"
+          h="30px"
+          w="30px"
           mr="4"
         />
         Sign in
       </ListItem>
       <ListItem
         as="list"
-        color="#a0aec0"
+        color="gray.400"
         display="flex"
         alignItems="center"
-        fontSize="md"
+        fontSize="sm"
         mb="3"
         py="3.5"
         px="4"
@@ -207,11 +213,12 @@ export default function Sidebar() {
         <Icon
           as={FaRocket}
           boxSize={6}
-          color="#4fd1c5"
-          fontSize="10px"
+          color="teal.300"
           bg="#fff"
-          p="5px"
-          borderRadius="6px"
+          p="8px"
+          borderRadius="12px"
+          h="30px"
+          w="30px"
           mr="4"
         />
         Sign Up
