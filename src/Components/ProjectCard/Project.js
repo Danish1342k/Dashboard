@@ -22,8 +22,6 @@ import {
   FaCreditCard,
   FaLockOpen,
   FaClipboardList,
-} from 'react-icons/fa';
-import {
   FaCheckCircle,
   FaExclamationCircle,
   FaMobileAlt,
@@ -185,30 +183,30 @@ function Project() {
         borderRadius="15px"
         boxShadow="rgba(0, 0, 0, 0.02) 0px 3.5px 5.5px"
       >
-        <Heading color="black" fontSize="18px">
+        <Heading color="gray.700" fontSize="lg" fontWeight="bold">
           Projects
         </Heading>
         <Flex alignItems="center" my="2">
-          <Text color="#6dc994" fontWeight="500">
-            30
+          <Text color="gray.400" fontWeight="bold" mr="2">
+            30 done
           </Text>
-          <Text color="gray.500" fontSize="sm" fontWeight="500">
-            done this month
+          <Text color="gray.400" fontSize="sm" fontWeight="semibold">
+            this month
           </Text>
         </Flex>
         <Table>
           <Thead>
             <Tr>
-              <Th fontWeight="700" color="gray.400">
-                Title
+              <Th fontWeight="700" color="gray.400" fontSize="xs">
+                Companies
               </Th>
-              <Th fontWeight="700" color="gray.400">
+              <Th fontWeight="700" color="gray.400" fontSize="xs">
                 Members
               </Th>
-              <Th fontWeight="700" color="gray.400">
+              <Th fontWeight="700" color="gray.400" fontSize="xs">
                 Budget
               </Th>
-              <Th fontWeight="700" color="gray.400">
+              <Th fontWeight="700" color="gray.400" fontSize="xs">
                 Completion
               </Th>
             </Tr>
@@ -226,7 +224,13 @@ function Project() {
                     p="5px"
                     borderRadius="6px"
                   />
-                  <Td borderBottom="none" whiteSpace="nowrap" fontWeight="700">
+                  <Td
+                    borderBottom="none"
+                    whiteSpace="nowrap"
+                    fontWeight="bold"
+                    fontSize="md"
+                    color="gray.700"
+                  >
                     {task.title}
                   </Td>
                 </Flex>
@@ -245,7 +249,9 @@ function Project() {
                     ))}
                   </Flex>
                 </Td>
-                <Td fontWeight="700">{task.budget}</Td>
+                <Td fontWeight="bold" fontSize="md" color="gray.700">
+                  {task.budget}
+                </Td>
                 <Td color="#4fd1c5" borderBottom="none" fontWeight="500">
                   {task.completion}%
                   <Progress
@@ -267,14 +273,14 @@ function Project() {
         p="20px 40px"
         boxShadow="rgba(0, 0, 0, 0.02) 0px 3.5px 5.5px"
       >
-        <Heading color="black" as="h4" fontSize="18px">
+        <Heading color="gray.700" as="h4" fontSize="lg" fontWeight="bold">
           Orders Overview
         </Heading>
         <Flex alignItems="center" my="2">
-          <Text color="#6dc994" fontWeight="500">
+          <Text color="green.400" fontWeight="bold">
             30%
           </Text>
-          <Text color="gray.500" fontSize="sm" fontWeight="500">
+          <Text color="gray.300" fontSize="sm" fontWeight="bold">
             this month
           </Text>
         </Flex>
@@ -297,9 +303,13 @@ function Project() {
               mr="15px"
               borderRadius="6px"
             />
-            <Box color="black" mb="8">
-              <Text>{notification.message}</Text>
-              <Text>{notification.time}</Text>
+            <Box mb="8">
+              <Text color="gray.700" fontWeight="bold">
+                {notification.message}
+              </Text>
+              <Text color="gray.400" fontStyle="sm" fontWeight="bold">
+                {notification.time}
+              </Text>
             </Box>
           </Flex>
         ))}

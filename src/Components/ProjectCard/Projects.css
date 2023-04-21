@@ -17,6 +17,13 @@
     justify-Content: center;
     align-items: center;
     margin-right: -15px;
+    z-index: 3;
+    cursor: pointer;
+    
+}
+.taskImg:hover{
+z-index: 1;
+    
 }
 table Tr {
     border-bottom: 2px solid#edf2f7;
