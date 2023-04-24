@@ -17,7 +17,7 @@ function BigCard() {
         bg="white"
         borderRadius="15px"
         p="5"
-        h={{ base: '600px', md: 'full', lg: '300px' }}
+        h={{ base: '600px', md: '350px', lg: '300px' }}
         width={{ base: 'full', md: 'full', lg: '650px' }}
         boxShadow="rgba(0, 0, 0, 0.02) 0px 3.5px 5.5px"
         position="relative"
@@ -32,46 +32,45 @@ function BigCard() {
             md: 'inherit',
           }}
         >
-          <Flex direction="column">
-            <Text fontSize="sm" fontWeight="bold" mb="4" color="gray.400">
-              Built by Developers
-            </Text>
-            <Text fontSize="lg" mb="4" color="gray.700" fontWeight="bold">
-              Purity UI Dashboard
-            </Text>
-            <Text
-              mb={{ base: '10px', lg: '20px' }}
-              color="gray.400"
-              fontSize="sm"
-              fontWeight="normal"
-            >
-              From colors, cards, typography to complex elements, you will find
-              the full documentation.
-            </Text>
-            <Button
-              colorScheme="#fff"
-              justifyContent="flex-start"
-              p="0"
-              position="absolute"
-              bottom="0px"
-            >
-              <Text color="gray.700" fontWeight="bold" fontSize="sm">
-                Read more
+          <Flex direction="column" justifyContent="space-between">
+            <Box minHeight="220px">
+              <Text fontSize="sm" fontWeight="bold" mb="4" color="gray.400">
+                Built by Developers
               </Text>
-              <Icon
-                as={ArrowForwardIcon}
-                bg="#fff"
-                color="gray.700"
-                fontWeight="bold"
+              <Text fontSize="lg" mb="4" color="gray.700" fontWeight="bold">
+                Purity UI Dashboard
+              </Text>
+              <Text
+                mb={{ base: '10px', lg: '20px' }}
+                color="gray.400"
                 fontSize="sm"
-                h="5"
-                w="5"
-                transition="transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1)"
-                _hover={{
-                  transform: 'translateX(8px)',
-                }}
-              />
-            </Button>
+                fontWeight="normal"
+              >
+                From colors, cards, typography to complex elements, you will
+                find the full documentation.
+              </Text>
+            </Box>
+            <Box>
+              <Button colorScheme="transparent" p="0">
+                <Text color="gray.700" fontWeight="bold" fontSize="sm">
+                  Read more
+                </Text>
+                <Icon
+                  ms="2"
+                  as={ArrowForwardIcon}
+                  bg="transparent"
+                  color="gray.700"
+                  fontWeight="bold"
+                  fontSize="sm"
+                  h="5"
+                  w="5"
+                  transition="transform 0.2s all"
+                  _hover={{
+                    transform: 'translateX(8px)',
+                  }}
+                />
+              </Button>
+            </Box>
           </Flex>
           <Flex
             align="center"
@@ -105,7 +104,7 @@ function BigCard() {
         p="4"
         borderRadius="15px"
         bg="#fff"
-        h={{ md: '290px', lg: '300px' }}
+        h={{ md: '350px', lg: '300px' }}
         width={{ base: 'full', md: 'full', lg: '400px' }}
         boxShadow="rgba(0, 0, 0, 0.02) 0px 3.5px 5.5px"
       >
@@ -115,7 +114,7 @@ function BigCard() {
           bgPosition="center"
           p="20px 10px"
           d="flex"
-          h="270px"
+          h={{ base: '330px', md: '310px' }}
           justifyContent="flex-start"
           alignItems="center"
           borderRadius="15px"
@@ -144,6 +143,7 @@ function BigCard() {
                 color="#fff"
                 h="5"
                 w="5"
+                // gap="6px"
                 transition="transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1)"
                 _hover={{
                   transform: 'translateX(8px)',
